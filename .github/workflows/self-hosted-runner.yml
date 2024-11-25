@@ -1,0 +1,12 @@
+name: Testing Self Hosted Runner
+on:
+    workflow_dispatch:
+jobs:
+    testing:
+        #all the runner should be present
+        runs-on: [self-hosted, Linux, X64, prarunner]
+        steps:
+        - name:
+          run: |
+            echo OK
+            sleep 15s
